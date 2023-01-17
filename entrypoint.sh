@@ -12,4 +12,6 @@ sh -c "rsync $ARGS -e 'ssh -i $SSHPATH/key -o StrictHostKeyChecking=no -p $REMOT
 sh -c "php artisan config:cache"
 sh -c "php artisan config:cache"
 sh -c "php artisan view:cache"
+sh -c "sudo chown www-data:www-data -R /var/www/carloseduardo.tech"
+
 
